@@ -1,6 +1,12 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+st.title("Your Quantum-Grown Zine Preview 💚")
+
+components.html(
+    """
+    <iframe src="https://yourpreviewlink.com" width="100%" height="600" frameborder="0"></iframe>
+    """,
+    height=600
 )
+
